@@ -1,58 +1,84 @@
-# Python File Converter with Streamlit
+# Universal File Converter App
 
-This project is a lightweight and user-friendly file converter web application built using Python and Streamlit. It enables users to easily convert between various document and image formats directly from their browser.
+A powerful and user-friendly file conversion web application built using **Streamlit**. This tool allows users to seamlessly convert between multiple file formats across different categories such as documents, spreadsheets, images, audio/video, presentations, archives, and PDFs — all within a clean, tabbed interface.
+
+---
 
 ## Features
 
-- Convert DOCX to PDF and TXT
-- Convert PDF to DOCX
-- Convert TXT to DOCX
-- Convert DOCX to TXT
-- Convert between image formats: PNG, JPG, JPEG, BMP, WEBP, TIFF
-- Convert images to PDF
-- Simple interface with instant file download after conversion
-- Built-in error handling and temporary file cleanup
+- ** Document Conversion**
+  - DOCX ↔️ PDF
+  - TXT ↔️ DOCX
+  - DOCX ↔️ TXT
+  - ODT to DOCX / PDF
 
-## Technologies Used
+- ** Spreadsheet Conversion**
+  - XLSX ↔️ CSV
+  - CSV ↔️ XLSX
+  - ODS → XLSX
+  - XLS → XLSX
 
-- **Python**: Core programming language used for backend logic
-- **Streamlit**: Framework used to create the interactive web interface
-- **docx2pdf**: Library to convert DOCX files to PDF
-- **pdf2docx**: Library to convert PDF files to DOCX
-- **python-docx**: Used for reading and writing DOCX files
-- **Pillow (PIL)**: Used for image processing and format conversion
+- ** Image Conversion**
+  - PNG ↔️ JPG, BMP, WEBP, TIFF
+  - JPG ↔️ PNG, BMP, PDF
+  - Convert any image format to PDF
 
-## How It Works
+- ** Audio/Video Conversion**
+  - MP4 → MP3
+  - AVI → MP4
+  - WAV → MP3
 
-The app uses a simple file uploader to accept supported files. Based on the file extension, it offers relevant output format options. When the user clicks "Convert," the file is saved temporarily, converted using the appropriate function, and a download button is provided to get the result.
+- ** Presentation Conversion**
+  - PPTX → PDF
+  - PPTX → Text / Slide-wise text extraction
 
-Temporary files are automatically cleaned up after each conversion.
+- ** Archive Utilities**
+  - Extract ZIP, TAR, 7z
+  - Convert 7z → ZIP
 
-## Usage
+- ** PDF Utilities**
+  - PDF ↔️ DOCX
+  - DOCX → PDF
+  - Image → PDF
+  - PDF → Images
+  - Merge multiple PDFs
+  - Split PDF by page range
 
-1. Clone the repository.
-2. Install the required packages from `requirements.txt`.
-3. Run the Streamlit app with:
-```
-streamlit run app.py
-```
-4. Upload a file, select the output format, and convert.
+---
 
-## File Structure
+## Tech Stack
 
-- `app.py`: Main Streamlit app
-- `converter/`
-- `documents.py`: Handles document format conversions
-- `images.py`: Handles image format conversions
-- `utils.py`: Utility functions (e.g., change file extension)
+- **Frontend & UI:** Streamlit
+- **File Handling & Processing:** Python libraries like `pandas`, `PyPDF2`, `moviepy`, `docx`, `pptx`, `pydub`, `PIL`, and system-level tools like `libreoffice` & `ffmpeg`.
 
-## Future Improvements
+---
 
-- Add support for more file types (e.g., Excel, PPT, CSV, audio/video)
-- Add batch conversion support
-- Improve UI and add drag-and-drop functionality
-- Deploy online using Streamlit Cloud or similar platforms
+## How to Run
 
-## License
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+    ```
+3. Run the Streamlit app:
+   ```bash
+   streamlit run app.py
+    ```
+## 📌 Notes
 
-This project is open-source and available under the MIT License.
+- Some conversions (like **DOCX to PDF** or **PPTX to PDF**) require **LibreOffice** (Linux/macOS) or **Windows COM support** (Windows only).
+- Make sure external tools like **`ffmpeg`** and **`libreoffice`** are properly installed and added to your system's PATH.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**. See the [LICENSE](./LICENSE) file for details.
+
+---
+
+Let me know if you’d like a `requirements.txt` or a usage demo section added as well!
