@@ -6,37 +6,37 @@ A powerful and user-friendly file conversion web application built using **Strea
 
 ## Features
 
-- ** Document Conversion**
+- **Document Conversion**
   - DOCX ↔️ PDF
   - TXT ↔️ DOCX
   - DOCX ↔️ TXT
   - ODT to DOCX / PDF
 
-- ** Spreadsheet Conversion**
+- **Spreadsheet Conversion**
   - XLSX ↔️ CSV
   - CSV ↔️ XLSX
   - ODS → XLSX
   - XLS → XLSX
 
-- ** Image Conversion**
+- **Image Conversion**
   - PNG ↔️ JPG, BMP, WEBP, TIFF
   - JPG ↔️ PNG, BMP, PDF
   - Convert any image format to PDF
 
-- ** Audio/Video Conversion**
+- **Audio/Video Conversion**
   - MP4 → MP3
   - AVI → MP4
   - WAV → MP3
 
-- ** Presentation Conversion**
+- **Presentation Conversion**
   - PPTX → PDF
   - PPTX → Text / Slide-wise text extraction
 
-- ** Archive Utilities**
+- **Archive Utilities**
   - Extract ZIP, TAR, 7z
   - Convert 7z → ZIP
 
-- ** PDF Utilities**
+- **PDF Utilities**
   - PDF ↔️ DOCX
   - DOCX → PDF
   - Image → PDF
