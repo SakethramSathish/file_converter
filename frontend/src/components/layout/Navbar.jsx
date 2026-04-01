@@ -53,7 +53,7 @@ export default function Navbar() {
                 Dashboard
               </Link>
               <a
-                href="https://github.com"
+                href="https://github.com/SakethramSathish"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm font-medium text-surface-600 dark:text-surface-300 hover:text-brand-500 transition-colors"
